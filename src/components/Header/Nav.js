@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <ul className="nav">
       <li className="nav__li">
-        <Link className="nav__a" href={"/about"}>
+        <Link className="nav__a" href={"/"}>
           About
         </Link>
       </li>

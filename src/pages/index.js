@@ -4,9 +4,5 @@ import styles from "@/styles/Home.module.css";
 import AboutDescription from "@/components/About/AboutDescription";
 
 export default function Home() {
-  return (
-    <section>
-      <AboutDescription />
-    </section>
-  );
+  return <AboutDescription />;
 }
