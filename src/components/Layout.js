@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Header from "./Header/Header";
 
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
           font-family: ${pjs.style.fontFamily};
         }
       `}</style>
+      <Header />
       <main>{children}</main>
     </>
   );
