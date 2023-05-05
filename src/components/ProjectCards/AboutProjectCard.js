@@ -1,7 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import Pete from "../../../public/assets/images/Pete.jpg";
 import Link from "next/link";
 const AboutProjectCard = ({
   projectImage,
@@ -11,18 +10,18 @@ const AboutProjectCard = ({
   projectLive,
 }) => {
   return (
-    <div className="about-project">
-      <div className="about-project-img-wrapper">
+    <div className="project-card">
+      <div className="project-card-img-wrapper">
         <Image
-          className="about-project__img"
+          className="project-card__img"
           src={projectImage}
           alt={projectImageAlt}
         />
       </div>
-      <h3 className="about-project__title">{projectTitle}</h3>
-      <div className="about-project-links-wrapper">
+      <h3 className="project-card__title ">{projectTitle}</h3>
+      <div className="project-card-links-wrapper">
         <Link
-          className="about__link about__link--sm"
+          className="card__link card__link--sm"
           href={projectRepository}
           target="__blank"
         >
@@ -30,7 +29,7 @@ const AboutProjectCard = ({
           <Icon icon="ph:github-logo" />
         </Link>
         <Link
-          className="about__link about__link--sm"
+          className="card__link card__link--sm"
           href={projectLive}
           target="__blank"
         >
