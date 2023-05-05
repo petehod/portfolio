@@ -21,11 +21,19 @@ const AboutProjectCard = ({
       </div>
       <h3 className="about-project__title">{projectTitle}</h3>
       <div className="about-project-links-wrapper">
-        <Link className="about__link about__link--sm" href={projectRepository}>
+        <Link
+          className="about__link about__link--sm"
+          href={projectRepository}
+          target="__blank"
+        >
           {" "}
           <Icon icon="ph:github-logo" />
         </Link>
-        <Link className="about__link about__link--sm" href={projectLive}>
+        <Link
+          className="about__link about__link--sm"
+          href={projectLive}
+          target="__blank"
+        >
           {" "}
           <Icon icon="fluent:live-20-regular" />
         </Link>
