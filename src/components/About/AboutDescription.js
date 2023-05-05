@@ -20,20 +20,23 @@ const AboutDescription = () => {
           <h2 className="about__header about__header--sm">Contact</h2>
           <div className="about-links-wrapper">
             <Link
-              className="about__link"
+              className="about__link about__link--lg"
               href={"https://github.com/petehodnefield"}
               target="__blank"
             >
               <Icon icon="ph:github-logo" />
             </Link>
             <Link
-              className="about__link"
+              className="about__link about__link--lg"
               href={"https://www.linkedin.com/in/petehodnefield/"}
               target="__blank"
             >
               <Icon icon="ph:linkedin-logo" />
             </Link>
-            <Link className="about__link" href={"mailto:pete.hod1@gmail.com"}>
+            <Link
+              className="about__link about__link--lg"
+              href={"mailto:pete.hod1@gmail.com"}
+            >
               {" "}
               <Icon icon="material-symbols:mail-outline" />
             </Link>

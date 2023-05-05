@@ -1,6 +1,7 @@
 *:root {
   --dark: #2c2c2c;
   --white: #ffffff;
+  --card-shadow: 0 8px 16px 0 rgba(44, 44, 44, 0.2);
 }
 html {
   box-sizing: border-box;
@@ -168,12 +169,64 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
-  width: 2rem;
+
   border-radius: 50%;
   border: 1px solid var(--dark);
   color: var(--dark);
 }
+.about__link--lg {
+  height: 2rem;
+  width: 2rem;
+}
+.about__link--sm {
+  height: 1.75rem;
+  width: 1.75rem;
+}
 .about__link:hover {
   opacity: 0.8;
+}
+
+/* About projects styling */
+.about-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: var(--card-shadow);
+  width: fit-content;
+  padding: 1rem;
+}
+.about-projects-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-project-img-wrapper {
+  height: 14rem;
+  width: 14rem;
+  margin-bottom: 1.5rem;
+}
+.about-project__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.about-project__title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.about-project-links-wrapper {
+  display: flex;
+  gap: 0.5rem;
 }
