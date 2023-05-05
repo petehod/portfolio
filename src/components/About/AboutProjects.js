@@ -21,6 +21,13 @@ const AboutProjects = () => {
           />
         ))}
       </div>
+      <Link
+        className="btn--large btn--link rounded btn--white "
+        href={"/projects"}
+      >
+        All projects
+        <Icon className="btn-arrow-icon" icon="ph:arrow-bend-up-right" />
+      </Link>
     </div>
   );
 };
