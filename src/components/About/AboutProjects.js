@@ -14,6 +14,8 @@ const AboutProjects = () => {
       <div className="about-projects-wrapper">
         {featuredProjects.map((project) => (
           <AboutProjectCard
+            key={project.projectTitle}
+            projectKey={project.projectTitle}
             projectImage={project.projectImage}
             projectTitle={project.projectTitle}
             projectImageAlt={project.projectImageAlt}

@@ -9,6 +9,8 @@ const projects = () => {
       <div className="projects-wrapper">
         {projectsData.map((project) => (
           <LargeProjectCard
+            key={project.projectTitle}
+            projectKey={project.projectTitle}
             projectImage={project.projectImage}
             projectTitle={project.projectTitle}
             projectShortDescription={project.projectShortDescription}

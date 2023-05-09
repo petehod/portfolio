@@ -9,9 +9,10 @@ const LargeProjectCard = ({
   projectShortDescription,
   projectRepository,
   projectLive,
+  projectKey,
 }) => {
   return (
-    <div className="project-card">
+    <div key={projectKey} className="project-card">
       {/* Image container */}
       <div className="project-card-img-wrapper">
         <Image

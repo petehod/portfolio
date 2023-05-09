@@ -8,16 +8,19 @@ const AboutProjectCard = ({
   projectImageAlt,
   projectRepository,
   projectLive,
+  projectKey,
 }) => {
   return (
-    <div className="project-card">
-      <div className="project-card-img-wrapper">
-        <Image
-          className="project-card__img"
-          src={projectImage}
-          alt={projectImageAlt}
-        />
-      </div>
+    <div key={projectKey} className="project-card">
+      <Link href={`/projects/${projectTitle}`}>
+        <div className="project-card-img-wrapper">
+          <Image
+            className="project-card__img"
+            src={projectImage}
+            alt={projectImageAlt}
+          />
+        </div>
+      </Link>
       <h3 className="project-card__title ">{projectTitle}</h3>
       <div className="project-card-links-wrapper">
         <Link
