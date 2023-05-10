@@ -12,12 +12,14 @@ body {
   margin: 0;
   padding: 0;
   color: var(--dark);
+  box-sizing: border-box;
 }
 main {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 #__next {
@@ -105,6 +107,7 @@ header {
 .about {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: rgb(230, 238, 244);
   background: linear-gradient(
     180deg,
@@ -401,4 +404,94 @@ header {
   grid-template-columns: repeat(4, 16rem);
   grid-template-rows: repeat(2, auto);
   gap: 2rem;
+}
+
+@media screen and (max-width: 1280px) {
+  header {
+    /* padding: 0 4rem; */
+    width: 80%;
+  }
+
+  /* About style */
+  .about-projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  /* About style */
+  .about-wrapper {
+    gap: 4rem;
+    flex-shrink: 2;
+    width: 80%;
+  }
+  .about-text {
+    max-width: 500px;
+  }
+  .about-projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Header style */
+  header {
+    justify-content: center;
+  }
+  .nav {
+    display: none;
+  }
+  /* About style */
+  .about-wrapper {
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+  }
+  .about-text {
+    width: 100%;
+    max-width: unset;
+  }
+  .about-photo {
+    order: 2;
+  }
+  .about__photo {
+    border-radius: 0.5rem;
+  }
+  .about__text--mglg {
+    margin-bottom: 1.5rem;
+  }
+  .about__header--lg {
+    margin-bottom: 1rem;
+  }
+  .about-projects-wrapper {
+    grid-template-columns: repeat(1, auto);
+  }
+  .project-card {
+    max-width: 20rem;
+  }
+  .project-card-img-wrapper {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* About style */
+  .about-wrapper {
+    padding: 1rem 2rem;
+  }
+  .project-card {
+    max-width: 18rem;
+  }
+  .project-card-img-wrapper {
+    width: 18rem;
+    height: 20rem;
+  }
 }

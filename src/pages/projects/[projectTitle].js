@@ -16,6 +16,7 @@ const IndividualProjectPage = () => {
   //   console.log(project);
   const router = useRouter().query;
   const chosenProject = router.projectTitle;
+
   useEffect(
     () =>
       projectsData.forEach((project) => {
@@ -44,7 +45,7 @@ const IndividualProjectPage = () => {
           Technologies used:
         </h3>
         {/* <TechUsed tech={project.projectTechUsed} /> */}
-        <OtherProjects />
+        <OtherProjects project={project} />
       </section>
     );
 };
