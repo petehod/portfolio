@@ -32,21 +32,35 @@ const IndividualProjectPage = () => {
       <section className="iproj">
         <div className="iproj-text-img-wrapper">
           <IndividualProjectsText project={project} />
-          <Link target="__blank" href={`${project.projectLive}`}>
-            <div className="iproj-img-wrapper">
-              <Image
-                className="iproj__img"
-                alt={project.projectImageAlt}
-                src={project.projectImage}
-              />
-            </div>
+          <Link
+            className="iproj-img-wrapper"
+            target="__blank"
+            href={`${project.projectLive}`}
+          >
+            <Image
+              className="iproj__img"
+              alt={project.projectImageAlt}
+              src={project.projectImage}
+            />
           </Link>
         </div>
-        {/* Tech used */}
-        <h3 className="iproj__subheader iproj__subheader--mgsm">
-          Technologies used:
-        </h3>
-        {/* <TechUsed tech={project.projectTechUsed} /> */}
+        <div className="iproj-tech-wrapper">
+          {/* Tech used */}
+          <h3 className="iproj__subheader iproj__subheader--mgsm">
+            Technologies used:
+          </h3>
+          <ul className="iproj__ul">
+            <li className="iproj__li">MongoDB</li>
+            <li className="iproj__li">MongoDB</li>
+            <li className="iproj__li">MongoDB</li>
+            <li className="iproj__li">MongoDB</li>
+            <li className="iproj__li">MongoDB</li>
+            <li className="iproj__li">MongoDB</li>
+            <li className="iproj__li">MongoDB</li>
+          </ul>
+          {/* <TechUsed tech={project.projectTechUsed} /> */}
+        </div>
+
         <OtherProjects project={project} />
       </section>
     );
