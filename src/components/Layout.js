@@ -1,12 +1,14 @@
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
 
 import { Plus_Jakarta_Sans } from "next/font/google";
 import Header from "./Header/Header";
+import HamburgerMenu from "./Header/HamburgerMenu";
 
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 const Layout = ({ children }) => {
+  const [hamOpen, setHamOpen] = useState(false);
   return (
     <>
       <Head>
@@ -23,8 +25,9 @@ const Layout = ({ children }) => {
           font-family: ${pjs.style.fontFamily};
         }
       `}</style>
-      <Header />
-      <main>{children}</main>
+      <HamburgerMenu hamOpen={hamOpen} setHamOpen={setHamOpen} />
+      <Header hamOpen={hamOpen} setHamOpen={setHamOpen} />
+      <main onClick={() => setHamOpen(false)}>{children}</main>
     </>
   );
 };

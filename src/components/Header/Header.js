@@ -1,14 +1,20 @@
 import React from "react";
 import Nav from "./Nav";
 import Link from "next/link";
+import Hamburger from "./Hamburger";
 
-const Header = () => {
+const Header = ({ hamOpen, setHamOpen }) => {
   return (
     <header>
-      <Link href="/" className="header__title">
+      <Link
+        onClick={() => setHamOpen(false)}
+        href="/"
+        className="header__title"
+      >
         Peter Hodnefield
       </Link>
       <Nav />
+      <Hamburger hamOpen={hamOpen} setHamOpen={setHamOpen} />
     </header>
   );
 };
