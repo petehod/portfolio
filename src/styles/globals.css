@@ -3,6 +3,7 @@
   --white: #ffffff;
   --card-shadow: 0 8px 16px 0 rgba(44, 44, 44, 0.2);
   --transition1: 150ms ease-in-out;
+  --opacity1: 0.8;
 }
 html {
   box-sizing: border-box;
@@ -47,6 +48,26 @@ a {
   border-radius: 0.5rem;
 }
 
+/* Animations */
+
+@keyframes hamburger-open {
+  0% {
+    width: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 60vw;
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* BTN styling */
 .btn--large {
   height: 3rem;
@@ -80,6 +101,11 @@ header {
 .header__title {
   font-size: 1.5rem;
   font-weight: 500;
+  cursor: pointer;
+}
+.header__title:hover {
+  opacity: var(--opacity1);
+  transition: var(--transition1);
 }
 .nav {
   display: flex;
@@ -104,6 +130,11 @@ header {
   border-radius: 50%;
   border: 1px solid var(--dark);
 }
+.nav__a:hover,
+.nav__a--email {
+  opacity: var(--opacity1);
+  transition: var(--transition1);
+}
 .hamburger {
   display: none;
   position: absolute;
@@ -118,7 +149,7 @@ header {
 .ham__line {
   background-color: var(--dark);
   height: 2px;
-  width: 20px;
+  width: 22px;
   border-radius: 100vmax;
 }
 .ham-menu {
@@ -135,6 +166,7 @@ header {
 }
 .ham-menu--open {
   display: block;
+  animation: hamburger-open 200ms;
 }
 .ham-icon-wrapper {
   display: flex;
@@ -148,6 +180,7 @@ header {
 
   font-size: 2rem;
   cursor: pointer;
+  animation: fade-in 1000ms;
 }
 .ham__icon:hover {
   opacity: 0.8;
@@ -163,6 +196,7 @@ header {
   color: var(--white);
   font-size: 1rem;
   font-weight: 500;
+  animation: fade-in 600ms;
 }
 .ham__link:hover {
   opacity: 0.8;
@@ -319,6 +353,10 @@ header {
   width: 14rem;
   margin-bottom: 1.5rem;
 }
+.project-card-img-wrapper:hover {
+  opacity: var(--opacity1);
+  transition: var(--transition1);
+}
 .project-card__img {
   height: 100%;
   width: 100%;
@@ -387,6 +425,10 @@ header {
 .iproj-img-wrapper {
   width: 22rem;
   height: 16.5rem;
+}
+.iproj-img-wrapper:hover {
+  opacity: var(--opacity1);
+  transition: var(--transition1);
 }
 .iproj__img {
   object-fit: cover;

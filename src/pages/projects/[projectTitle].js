@@ -32,13 +32,15 @@ const IndividualProjectPage = () => {
       <section className="iproj">
         <div className="iproj-text-img-wrapper">
           <IndividualProjectsText project={project} />
-          <div className="iproj-img-wrapper">
-            <Image
-              className="iproj__img"
-              alt={project.projectImageAlt}
-              src={project.projectImage}
-            />
-          </div>
+          <Link target="__blank" href={`${project.projectLive}`}>
+            <div className="iproj-img-wrapper">
+              <Image
+                className="iproj__img"
+                alt={project.projectImageAlt}
+                src={project.projectImage}
+              />
+            </div>
+          </Link>
         </div>
         {/* Tech used */}
         <h3 className="iproj__subheader iproj__subheader--mgsm">
