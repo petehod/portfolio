@@ -336,6 +336,9 @@ header {
   font-weight: 500;
   margin-bottom: 2rem;
 }
+.iproj__header--mglg {
+  margin-bottom: 2.5rem;
+}
 .iproj__subheader {
   font-weight: 500;
   font-size: 1.25rem;
@@ -383,4 +386,19 @@ header {
 .iproj__li {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.iproj-other-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.iproj-other-proj-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 16rem);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
 }
