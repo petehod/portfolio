@@ -57,8 +57,8 @@ const AboutDescription = () => {
         </p>
         <Link
           className="btn--large btn--link rounded"
-          type="download"
-          href={""}
+          href="https://www.dropbox.com/s/pliol9uv4j1vwzl/Peter%20Hodnefield%27s%20Resume.pdf?dl=0"
+          target="__blank"
         >
           Resume
         </Link>

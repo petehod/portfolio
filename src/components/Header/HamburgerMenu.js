@@ -33,20 +33,21 @@ const HamburgerMenu = ({ hamOpen, setHamOpen }) => {
           </Link>
         </li>
         <li className="ham__li">
-          <a
+          <Link
             className="ham__link"
             onClick={() => setHamOpen(false)}
-            download={""}
-            href={"/"}
+            href="https://www.dropbox.com/s/pliol9uv4j1vwzl/Peter%20Hodnefield%27s%20Resume.pdf?dl=0"
+            target="__blank"
           >
             Resume
-          </a>
+          </Link>
         </li>
         <li className="ham__li">
           <Link
             className="ham__link"
             onClick={() => setHamOpen(false)}
             href={"mailto:pete.hod1@gmail.com"}
+            target="__blank"
           >
             Email
           </Link>
