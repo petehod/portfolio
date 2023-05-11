@@ -37,14 +37,18 @@ const LargeProjectCard = ({
           {" "}
           <Icon icon="ph:github-logo" />
         </Link>
-        <Link
-          className="card__link card__link--sm"
-          href={projectLive}
-          target="__blank"
-        >
-          {" "}
-          <Icon icon="fluent:live-20-regular" />
-        </Link>{" "}
+        {projectLive ? (
+          <Link
+            className="card__link card__link--sm"
+            href={projectLive}
+            target="__blank"
+          >
+            {" "}
+            <Icon icon="fluent:live-20-regular" />
+          </Link>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
