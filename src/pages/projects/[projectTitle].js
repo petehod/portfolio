@@ -8,12 +8,10 @@ import meloroids from "../../../public/assets/project-images/meloroids.jpg";
 import IndividualProjectsText from "@/components/IndividualProjectsText.js/IndividualProjectsText";
 
 import { projectsData } from "@/project-data/projects-data";
-import TechUsed from "@/components/IndividualProjectsText.js/TechUsed";
 import OtherProjects from "@/components/IndividualProjectsText.js/OtherProjects";
 
 const IndividualProjectPage = () => {
   const [project, setProject] = useState({});
-  if (project) console.log(project.projectTechUsed);
   const router = useRouter().query;
   const chosenProject = router.projectTitle;
 
@@ -39,6 +37,7 @@ const IndividualProjectPage = () => {
           >
             <Image
               className="iproj__img"
+              priority={true}
               alt={project.projectImageAlt}
               src={project.projectImage}
             />
@@ -51,7 +50,9 @@ const IndividualProjectPage = () => {
           </h3>{" "}
           <ul className="iproj__ul">
             {project.projectTechUsed
-              ? project.projectTechUsed.map((tech) => <li>{tech}</li>)
+              ? project.projectTechUsed.map((tech) => (
+                  <li key={tech}>{tech}</li>
+                ))
               : ""}
           </ul>
           {/* <TechUsed tech={project.projectTechUsed} /> */}

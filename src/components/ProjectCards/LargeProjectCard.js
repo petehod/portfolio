@@ -18,6 +18,7 @@ const LargeProjectCard = ({
         <div className="project-card-img-wrapper">
           <Image
             className="project-card__img"
+            priority={false}
             src={projectImage}
             alt={projectImageAlt}
           />
