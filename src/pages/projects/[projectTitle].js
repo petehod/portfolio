@@ -13,7 +13,7 @@ import OtherProjects from "@/components/IndividualProjectsText.js/OtherProjects"
 
 const IndividualProjectPage = () => {
   const [project, setProject] = useState({});
-  //   console.log(project);
+  if (project) console.log(project.projectTechUsed);
   const router = useRouter().query;
   const chosenProject = router.projectTitle;
 
@@ -48,15 +48,11 @@ const IndividualProjectPage = () => {
           {/* Tech used */}
           <h3 className="iproj__subheader iproj__subheader--mgsm">
             Technologies used:
-          </h3>
+          </h3>{" "}
           <ul className="iproj__ul">
-            <li className="iproj__li">MongoDB</li>
-            <li className="iproj__li">MongoDB</li>
-            <li className="iproj__li">MongoDB</li>
-            <li className="iproj__li">MongoDB</li>
-            <li className="iproj__li">MongoDB</li>
-            <li className="iproj__li">MongoDB</li>
-            <li className="iproj__li">MongoDB</li>
+            {project.projectTechUsed
+              ? project.projectTechUsed.map((tech) => <li>{tech}</li>)
+              : ""}
           </ul>
           {/* <TechUsed tech={project.projectTechUsed} /> */}
         </div>
