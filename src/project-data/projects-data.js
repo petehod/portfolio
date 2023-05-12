@@ -78,7 +78,7 @@ export const projectsData = [
     projectLive: "https://akemi.onrender.com/",
     projectTechUsed: ["React.js", "CSS"],
     projectImage: akemiImage,
-    projectImageAlt: "The landing page for Akemi's website",
+    projectImageAlt: "The landing page for Akemi%apos;s website",
   },
   {
     projectTitle: "Weather Dashboard",
@@ -95,23 +95,23 @@ export const projectsData = [
   },
   {
     projectTitle: "NBA Song of the Year",
-    projectLogline: "Popular songs from a player's draft year.",
+    projectLogline: "Popular songs from a player%apos;s draft year.",
     projectDescription:
-      "NBA Song of the Year allows a user to input a current NBA player's name, and receive the most popular songs from that player's draft year. The user's searches are saved in local storage for future reference.",
+      "NBA Song of the Year allows a user to input a current NBA player%apos;s name, and receive the most popular songs from that player%apos;s draft year. The user%apos;s searches are saved in local storage for future reference.",
     projectShortDescription: "Songs from a draft year",
 
     projectRepository: "https://github.com/Undisputed06/nba-song-of-the-year",
     projectLive: "https://undisputed06.github.io/nba-song-of-the-year/",
     projectTechUsed: [
       "YouTube API",
-      "Ball Don't Lie API",
+      "Ball Don%apos;t Lie API",
       "HTML",
       "JavaScript",
       "Bulma",
     ],
     projectImage: NBASOTYImage,
     projectImageAlt:
-      "The landing page for NBA Song of the Year, where you can see popular songs from an NBA player's draft year.",
+      "The landing page for NBA Song of the Year, where you can see popular songs from an NBA player%apos;s draft year.",
   },
   {
     projectTitle: "DEI Calendar",
