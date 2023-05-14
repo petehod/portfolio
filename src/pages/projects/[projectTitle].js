@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/router";
@@ -8,12 +9,11 @@ import meloroids from "../../../public/assets/project-images/meloroids.jpg";
 import IndividualProjectsText from "@/components/IndividualProjectsText.js/IndividualProjectsText";
 
 import { projectsData } from "@/project-data/projects-data";
-import OtherProjects from "@/components/IndividualProjectsText.js/OtherProjects";
 
 const IndividualProjectPage = () => {
-  const [project, setProject] = useState({});
   const router = useRouter().query;
   const chosenProject = router.projectTitle;
+  const [project, setProject] = useState({ chosenProject });
 
   useEffect(
     () =>
@@ -22,7 +22,7 @@ const IndividualProjectPage = () => {
           setProject(project);
         }
       }),
-    [router, project]
+    [router]
   );
   if (!project) return <div>Loading....</div>;
   else
@@ -55,10 +55,67 @@ const IndividualProjectPage = () => {
                 ))
               : ""}
           </ul>
-          {/* <TechUsed tech={project.projectTechUsed} /> */}
         </div>
 
-        <OtherProjects project={project} />
+        {/* Other projects */}
+        <div className="iproj-other-wrapper">
+          {" "}
+          <h2 className="iproj__header iproj__header--mglg">Other projects:</h2>
+          {project ? (
+            <div className="iproj-other-proj-wrapper">
+              {projectsData.map((project) =>
+                project.projectTitle === chosenProject ? (
+                  ""
+                ) : (
+                  <div key={project.projectTitle} className="project-card">
+                    <Link href={`/projects/${project.projectTitle}`}>
+                      {/* Image container */}
+                      <div className="project-card-img-wrapper">
+                        <Image
+                          className="project-card__img"
+                          priority={false}
+                          src={project.projectImage}
+                          alt={project.projectImageAlt}
+                        />
+                      </div>
+                    </Link>
+                    <h3 className="project-card__title project-card__title-mgsmall">
+                      {project.projectTitle}
+                    </h3>
+                    <h4 className="project-card__subtitle">
+                      {project.projectShortDescription}
+                    </h4>
+                    {/* links */}
+                    <div className="project-card-links-wrapper">
+                      <Link
+                        className="card__link card__link--sm"
+                        href={`${project.projectRepository}`}
+                        target="__blank"
+                      >
+                        {" "}
+                        <Icon icon="ph:github-logo" />
+                      </Link>
+                      {project.projectLive ? (
+                        <Link
+                          className="card__link card__link--sm"
+                          href={`${project.projectLive}`}
+                          target="__blank"
+                        >
+                          {" "}
+                          <Icon icon="fluent:live-20-regular" />
+                        </Link>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                  </div>
+                )
+              )}
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
       </section>
     );
 };

@@ -104,7 +104,7 @@ export const projectsData = [
     projectLive: "https://undisputed06.github.io/nba-song-of-the-year/",
     projectTechUsed: [
       "YouTube API",
-      "Ball Don%apos;t Lie API",
+      "Ball Don't Lie API",
       "HTML",
       "JavaScript",
       "Bulma",

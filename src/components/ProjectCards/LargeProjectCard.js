@@ -32,7 +32,7 @@ const LargeProjectCard = ({
       <div className="project-card-links-wrapper">
         <Link
           className="card__link card__link--sm"
-          href={projectRepository}
+          href={`${projectRepository}`}
           target="__blank"
         >
           {" "}
@@ -41,7 +41,7 @@ const LargeProjectCard = ({
         {projectLive ? (
           <Link
             className="card__link card__link--sm"
-            href={projectLive}
+            href={`${projectLive}`}
             target="__blank"
           >
             {" "}
