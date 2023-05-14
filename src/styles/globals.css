@@ -214,6 +214,7 @@ header {
     rgba(49, 161, 241, 0.35) 100%
   );
   width: 100%;
+  min-height: 100vh;
 }
 .about-wrapper {
   height: fit-content;
