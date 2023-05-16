@@ -46,7 +46,7 @@ const AboutDescription = () => {
       <div className="about-text">
         <h2 className="about__header about__header--lg">About me</h2>
         <p className="about__text about__text--mgsmall">
-          I am a full-stack web developer utilizing a background in Audio
+          I am a frontend web developer utilizing a background in Audio
           Engineering and Psychology to help build practical applications and
           services for musicians.{" "}
         </p>

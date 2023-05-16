@@ -16,7 +16,7 @@ const Nav = () => {
       </li>
       <li className="nav__li">
         <Link
-          href="https://www.dropbox.com/s/pliol9uv4j1vwzl/Peter%20Hodnefield%27s%20Resume.pdf?dl=0"
+          href="https://www.dropbox.com/s/7so60w7lwd9ycwn/Peter%20Hodnefield%27s%20Resume.pdf?dl=0"
           target="__blank"
           className="nav__a"
         >
