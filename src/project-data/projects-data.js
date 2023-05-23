@@ -100,8 +100,8 @@ export const projectsData = [
       "NBA Song of the Year allows a user to input a current NBA player's name, and receive the most popular songs from that player's draft year. The user's searches are saved in local storage for future reference.",
     projectShortDescription: "Songs from a draft year",
 
-    projectRepository: "https://github.com/Undisputed06/nba-song-of-the-year",
-    projectLive: "https://undisputed06.github.io/nba-song-of-the-year/",
+    projectRepository: "https://github.com/petehodnefield/nba-soty",
+    projectLive: "https://petehodnefield.github.io/nba-soty/",
     projectTechUsed: [
       "YouTube API",
       "Ball Don't Lie API",
