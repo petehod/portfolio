@@ -14,26 +14,35 @@ const IndividualProjectsText = ({ project }) => {
 
       {/* Links wrapper */}
       <div className="iproj-links-wrapper">
-        <Link
-          href={`${project.projectRepository}`}
-          target="__blank"
-          className="btn--link btn--large rounded"
-        >
-          {" "}
-          <Icon icon="ph:github-logo" className="iproj__icon" />
-          Repository
-        </Link>
-        <Link
-          href={`${project.projectLive}`}
-          target="__blank"
-          className="btn--link btn--large rounded "
-        >
-          {" "}
-          <div className="iproj__link-live">
-            <Icon icon="fluent:live-20-regular" className="iproj__icon" />
-            Live
-          </div>
-        </Link>
+        {project.projectRepository ? (
+          <Link
+            href={`${project.projectRepository}`}
+            target="__blank"
+            className="btn--link btn--large rounded"
+          >
+            {" "}
+            <Icon icon="ph:github-logo" className="iproj__icon" />
+            Repository
+          </Link>
+        ) : (
+          ""
+        )}
+
+        {project.projectLive ? (
+          <Link
+            href={`${project.projectLive}`}
+            target="__blank"
+            className="btn--link btn--large rounded "
+          >
+            {" "}
+            <div className="iproj__link-live">
+              <Icon icon="fluent:live-20-regular" className="iproj__icon" />
+              Live
+            </div>
+          </Link>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

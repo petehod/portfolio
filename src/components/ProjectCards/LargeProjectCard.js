@@ -30,14 +30,19 @@ const LargeProjectCard = ({
       <h4 className="project-card__subtitle">{projectShortDescription}</h4>
       {/* links */}
       <div className="project-card-links-wrapper">
-        <Link
-          className="card__link card__link--sm"
-          href={`${projectRepository}`}
-          target="__blank"
-        >
-          {" "}
-          <Icon icon="ph:github-logo" />
-        </Link>
+        {projectRepository ? (
+          <Link
+            className="card__link card__link--sm"
+            href={`${projectRepository}`}
+            target="__blank"
+          >
+            {" "}
+            <Icon icon="ph:github-logo" />
+          </Link>
+        ) : (
+          ""
+        )}
+
         {projectLive ? (
           <Link
             className="card__link card__link--sm"

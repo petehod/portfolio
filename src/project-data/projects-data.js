@@ -4,6 +4,7 @@ import BWBImage from "../../public/assets/project-images/bwb.jpg";
 import akemiImage from "../../public/assets/project-images/akemi.jpg";
 import weatherDashImage from "../../public/assets/project-images/weather-dash.jpg";
 import NBASOTYImage from "../../public/assets/project-images/nba-soty.jpg";
+import mongamongaImage from "../../public/assets/project-images/mongamonga.jpg";
 import deiCalendarImage from "../../public/assets/project-images/dei.png";
 import unleashedImage from "../../public/assets/project-images/unleashed.jpg";
 
@@ -45,6 +46,20 @@ export const projectsData = [
       "The landing page for meloroids, which makes melody writing easier.",
   },
 
+  {
+    projectTitle: "mongamonga",
+    projectLogline: "How I collaborate with other music producers",
+    projectDescription:
+      "mongamonga is my WordPress site where I post my original guitar loops for producers to download. Over the last two years, I have worked with thousands of music producers and have received recognition from industry professionals like Russ.",
+    projectShortDescription: "Producer collaboration",
+
+    projectRepository: null,
+    projectLive: "https://mongamonga.com/",
+    projectTechUsed: ["WordPress", "Elementor", "WooCommerce"],
+    projectImage: mongamongaImage,
+    projectImageAlt:
+      "The landing page for mongamonga, which is a how I collaborate with other music producers.",
+  },
   {
     projectTitle: "Brews with Brule",
     projectLogline: "Social media for beer enthusiasts",
@@ -113,20 +128,20 @@ export const projectsData = [
     projectImageAlt:
       "The landing page for NBA Song of the Year, where you can see popular songs from an NBA player's draft year.",
   },
-  {
-    projectTitle: "DEI Calendar",
-    projectLogline: "Upcoming DEI events for employees",
-    projectDescription:
-      "DEI Calendar is a hub for employees to see upcoming DEI-related events. Employees can filter through events based on the culture, and sign up to attend events.",
-    projectShortDescription: "Upcoming DEI events",
+  // {
+  //   projectTitle: "DEI Calendar",
+  //   projectLogline: "Upcoming DEI events for employees",
+  //   projectDescription:
+  //     "DEI Calendar is a hub for employees to see upcoming DEI-related events. Employees can filter through events based on the culture, and sign up to attend events.",
+  //   projectShortDescription: "Upcoming DEI events",
 
-    projectRepository: "https://github.com/petehodnefield/project-three",
-    projectLive: null,
-    projectTechUsed: ["MongoDB", "GraphQL", "Node.js", "React.js", "CSS"],
-    projectImage: deiCalendarImage,
-    projectImageAlt:
-      "The landing page for DEI Calendar, where employees can learn about DEI-related events.",
-  },
+  //   projectRepository: "https://github.com/petehodnefield/project-three",
+  //   projectLive: null,
+  //   projectTechUsed: ["MongoDB", "GraphQL", "Node.js", "React.js", "CSS"],
+  //   projectImage: deiCalendarImage,
+  //   projectImageAlt:
+  //     "The landing page for DEI Calendar, where employees can learn about DEI-related events.",
+  // },
   {
     projectTitle: "Unleashed",
     projectLogline: "Lost pets finder",

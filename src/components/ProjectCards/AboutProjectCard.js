@@ -24,14 +24,19 @@ const AboutProjectCard = ({
       </Link>
       <h3 className="project-card__title ">{projectTitle}</h3>
       <div className="project-card-links-wrapper">
-        <Link
-          className="card__link card__link--sm"
-          href={projectRepository}
-          target="__blank"
-        >
-          {" "}
-          <Icon icon="ph:github-logo" />
-        </Link>
+        {projectRepository ? (
+          <Link
+            className="card__link card__link--sm"
+            href={projectRepository}
+            target="__blank"
+          >
+            {" "}
+            <Icon icon="ph:github-logo" />
+          </Link>
+        ) : (
+          ""
+        )}
+
         <Link
           className="card__link card__link--sm"
           href={projectLive}
