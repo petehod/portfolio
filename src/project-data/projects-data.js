@@ -25,10 +25,10 @@ export const projectsData = [
       "The landing page for BeatGenius, which provides custom music production.",
   },
   {
-    projectTitle: "Nancy Hodnefield Coaching",
+    projectTitle: "Nancy Johnson Coaching",
     projectLogline: "Website for a professional coach",
     projectDescription:
-      "Nancy Hodnefield Coaching is the site used by my mom who is a professional coach focused on mentoring young female professionals. This site represents her brand and is used to gain and keep clients.",
+      "Nancy Johnson Coaching is the sitefor a professional coach focused on mentoring young female professionals. This site represents her brand and is used to gain and keep clients.",
     projectShortDescription: "Professional coaching website",
 
     projectRepository: "https://github.com/petehodnefield/nancy-coaching",
@@ -36,7 +36,7 @@ export const projectsData = [
     projectTechUsed: ["React.js", "Next.js", "CSS", "MidJourney", "Chat GPT"],
     projectImage: nancyImage,
     projectImageAlt:
-      "The landing page for Nancy Hodnefield Coaching, which is the site she uses to gain new clients for her coaching business.",
+      "The landing page for Nancy Johnson Coaching, which is the site she uses to gain new clients for her coaching business.",
   },
   {
     projectTitle: "Meloroids",
