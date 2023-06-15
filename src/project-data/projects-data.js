@@ -5,7 +5,7 @@ import akemiImage from "../../public/assets/project-images/akemi.jpg";
 import weatherDashImage from "../../public/assets/project-images/weather-dash.jpg";
 import NBASOTYImage from "../../public/assets/project-images/nba-soty.jpg";
 import mongamongaImage from "../../public/assets/project-images/mongamonga.jpg";
-import deiCalendarImage from "../../public/assets/project-images/dei.png";
+import nancyImage from "../../public/assets/project-images/nancy-coaching.jpg";
 import unleashedImage from "../../public/assets/project-images/unleashed.jpg";
 
 export const projectsData = [
@@ -23,6 +23,20 @@ export const projectsData = [
     projectImage: beatGeniusImage,
     projectImageAlt:
       "The landing page for BeatGenius, which provides custom music production.",
+  },
+  {
+    projectTitle: "Nancy Hodnefield Coaching",
+    projectLogline: "Website for a professional coach",
+    projectDescription:
+      "Nancy Hodnefield Coaching is the site used by my mom who is a professional coach focused on mentoring young female professionals. This site represents her brand and is used to gain and keep clients.",
+    projectShortDescription: "Professional coaching website",
+
+    projectRepository: "https://github.com/petehodnefield/nancy-coaching",
+    projectLive: "https://nancy-coaching.vercel.app/",
+    projectTechUsed: ["React.js", "Next.js", "CSS", "MidJourney", "Chat GPT"],
+    projectImage: nancyImage,
+    projectImageAlt:
+      "The landing page for Nancy Hodnefield Coaching, which is the site she uses to gain new clients for her coaching business.",
   },
   {
     projectTitle: "Meloroids",
@@ -60,6 +74,7 @@ export const projectsData = [
     projectImageAlt:
       "The landing page for mongamonga, which is a how I collaborate with other music producers.",
   },
+
   {
     projectTitle: "Brews with Brule",
     projectLogline: "Social media for beer enthusiasts",

@@ -271,6 +271,7 @@ header {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: 2px 4px 8px 0 rgba(44, 44, 44, 0.3);
 }
 
 .about-contact-wrapper {
@@ -369,6 +370,7 @@ header {
   font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .project-card__title-mgsmall {
   margin-bottom: 0.75rem;
