@@ -10,6 +10,28 @@ import unleashedImage from "../../public/assets/project-images/unleashed.jpg";
 
 export const projectsData = [
   {
+    projectTitle: "Meloroids",
+    projectLogline: "Music production simplified",
+    projectDescription:
+      "I created Meloroids to automate many of the decisions that go into making music. Meloroids has a database of popular chords progressions that allow you to generate instant inspiration for your beats and/or melodies. It allows you to create an account and will perfectly format your beat file names for you.",
+    projectShortDescription: "Melody creation simplified",
+    projectRepository: "https://github.com/petehodnefield/meloroids-typescript",
+    projectLive: "https://meloroids.io",
+    projectTechUsed: [
+      "MongoDB",
+      "GraphQL",
+      "Apollo Client",
+      "Node.js",
+      "Next.js",
+      "React.js",
+      "Tailwind CSS",
+      "Midjourney",
+    ],
+    projectImage: meloroidsImage,
+    projectImageAlt:
+      "The landing page for meloroids, which makes melody writing easier.",
+  },
+  {
     projectTitle: "BeatGenius",
     projectLogline:
       "Custom music production from an exclusive producer collective.",
@@ -37,27 +59,6 @@ export const projectsData = [
     projectImage: nancyImage,
     projectImageAlt:
       "The landing page for Nancy Johnson Coaching, which is the site she uses to gain new clients for her coaching business.",
-  },
-  {
-    projectTitle: "Meloroids",
-    projectLogline: "Applying Pareto’s Principle to melody creation",
-    projectDescription:
-      "Meloroids is what I use on a daily basis to write melodies. It is a database populated with the most successful chord progressions in the genres I write in the most.",
-    projectShortDescription: "Melody creation simplified",
-    projectRepository: "https://github.com/petehodnefield/meloroids-typescript",
-    projectLive: "https://meloroids.io",
-    projectTechUsed: [
-      "MongoDB",
-      "GraphQL",
-      "Apollo Client",
-      "Node.js",
-      "Next.js",
-      "React.js",
-      "Tailwind CSS",
-    ],
-    projectImage: meloroidsImage,
-    projectImageAlt:
-      "The landing page for meloroids, which makes melody writing easier.",
   },
 
   {
