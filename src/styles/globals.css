@@ -426,6 +426,11 @@ header {
   align-items: center;
   padding-bottom: 3rem;
 }
+@media screen and (min-width:768px){
+  .iproj-text-img-wrapper {
+  align-items: flex-start;
+}
+}
 .iproj-img-wrapper {
   width: 22rem;
   height: 16.5rem;
@@ -477,9 +482,14 @@ header {
 
 .iproj-links-wrapper {
   display: flex;
+  gap: .75rem;
+}
+@media screen and (min-width:768px){
+  .iproj-links-wrapper {
+  display: flex;
   gap: 1.5rem;
 }
-
+}
 .iproj__icon {
   margin-right: 3px;
 }
@@ -517,9 +527,35 @@ header {
 }
 .iproj-other-proj-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 16rem);
+  grid-template-columns: repeat(3, 16rem);
   grid-template-rows: repeat(2, auto);
   gap: 2rem;
+}
+.iproj__credentials-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem; 
+  gap: .25rem;
+  align-items: center;
+}
+@media screen and (min-width:768px){
+  .iproj__credentials-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem; 
+  gap: .25rem;
+  align-items: flex-start;
+}
+}
+.iproj__credentials-header {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.iproj__credential {
+  font-size: 1rem;
+}
+.bold {
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1280px) {
@@ -591,6 +627,7 @@ header {
   .iproj-text-img-wrapper {
     flex-direction: column;
     gap: 2rem;
+
     padding-bottom: 2rem;
   }
   .iproj-text-wrapper {

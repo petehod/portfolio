@@ -24,6 +24,8 @@ const IndividualProjectPage = () => {
       }),
     [router]
   );
+  console.log('project', project)
+
   if (!project) return <div>Loading....</div>;
   else
     return (
