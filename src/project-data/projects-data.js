@@ -32,11 +32,10 @@ export const projectsData = [
       "The landing page for meloroids, which makes melody writing easier.",
     projectCredentials: {
       username: "testuser",
-      password: "password"
-		}
+      password: "password",
+    },
   },
-	
-  
+
   {
     projectTitle: "One Percent Better",
     projectLogline: "Practicing Growth Mindset",
@@ -44,7 +43,7 @@ export const projectsData = [
       "One Percent Better combines the 1% Improvements idea from James Clear&apos;s Atomic Habits and Growth Mindset. Users can create areas of focus and add a new improvement in each area every 24 hours. Each improvement adds a datapoint that shows the user improving by 1% every time a data point is added.",
     projectShortDescription: "Growth mindset",
     projectRepository: "https://github.com/petehodnefield/one-percent-better",
-    projectLive: "https://one-percent-better-e5v77fvub-petehodnefield.vercel.app/",
+    projectLive: "https://one-percent-better.vercel.app/",
     projectTechUsed: [
       "MongoDB",
       "GraphQL",
@@ -58,10 +57,10 @@ export const projectsData = [
     projectImage: onePercentImage,
     projectImageAlt:
       "The landing page for 1% Better, which focuses on practicing growth mindset",
-		projectCredentials: {
-			username: "testuser",
-			password: "password"
-		}
+    projectCredentials: {
+      username: "testuser",
+      password: "password",
+    },
   },
   {
     projectTitle: "BeatGenius",
@@ -77,7 +76,7 @@ export const projectsData = [
     projectImage: beatGeniusImage,
     projectImageAlt:
       "The landing page for BeatGenius, which provides custom music production.",
-    projectCredentials: null
+    projectCredentials: null,
   },
   {
     projectTitle: "Nancy Johnson Coaching",
@@ -92,9 +91,8 @@ export const projectsData = [
     projectImage: nancyImage,
     projectImageAlt:
       "The landing page for Nancy Johnson Coaching, which is the site she uses to gain new clients for her coaching business.",
-    projectCredentials: null
+    projectCredentials: null,
   },
-
 ];
 
 // {
