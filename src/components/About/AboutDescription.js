@@ -51,14 +51,22 @@ const AboutDescription = () => {
       <div className="about-text">
         <h2 className="about__header about__header--lg">About me</h2>
         <p className="about__text about__text--mgsmall">
-          I am a frontend web developer utilizing a background in Audio
-          Engineering and Psychology to help build practical applications and
-          services for musicians.{" "}
+          I am a Fullstack Web Developer utilizing a background in Audio
+          Engineering and Psychology to build practical applications for those
+          with a growth mindset. In 2022, I earned a certificate in Full Stack
+          Web Development through the University of Minnesota coding bootcamp.
+          Strong skills in HTML, CSS, & JavaScript, as well as strong
+          fundamentals in MongoDB, REST APIs, and GraphQL.
+        </p>
+        <p className="about__text about__text--mgsmall">
+          I have a BA in Psychology through the University of Minnesota and
+          previously studied at the Berklee School of Music in Boston, MA. My
+          love for Psychology, Neuroscience, and Music have shaped most of the
+          coding projects I have built thus far.
         </p>
         <p className="about__text about__text--mglg">
-          I earned a certificate in full stack web development through the
-          University of Minnesota coding bootcamp in 2022. Skills in HTML, CSS,
-          & JavaScript, as well as strong UI/UX design skills in Figma.
+          When I am not coding, I am usually writing guitar loops for hip hop
+          producers using my project Meloroids.
         </p>
         <Link
           className="btn--large btn--link rounded"

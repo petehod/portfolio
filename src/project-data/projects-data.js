@@ -26,13 +26,14 @@ export const projectsData = [
       "Next.js",
       "React.js",
       "Tailwind CSS",
+      "JWT",
     ],
     projectImage: meloroidsImage,
     projectImageAlt:
       "The landing page for meloroids, which makes melody writing easier.",
     projectCredentials: {
       username: "testuser",
-      password: "password",
+      password: "Password1!",
     },
   },
 
@@ -40,7 +41,7 @@ export const projectsData = [
     projectTitle: "One Percent Better",
     projectLogline: "Practicing Growth Mindset",
     projectDescription:
-      "One Percent Better combines the 1% Improvements idea from James Clear&apos;s Atomic Habits and Growth Mindset. Users can create areas of focus and add a new improvement in each area every 24 hours. Each improvement adds a datapoint that shows the user improving by 1% every time a data point is added.",
+      "One Percent Better is about getting 1% better at a chosen area every day. This is inspired from the book Atomic Habits. Users can create areas of focus and add a new improvement in each area every 24 hours. Each improvement adds a datapoint that shows the user improving by 1%.",
     projectShortDescription: "Growth mindset",
     projectRepository: "https://github.com/petehodnefield/one-percent-better",
     projectLive: "https://one-percent-better.vercel.app/",
@@ -53,6 +54,7 @@ export const projectsData = [
       "React.js",
       "Midjourney",
       "Chart.js",
+      "JWT",
     ],
     projectImage: onePercentImage,
     projectImageAlt:
@@ -82,9 +84,8 @@ export const projectsData = [
     projectTitle: "Nancy Johnson Coaching",
     projectLogline: "Website for a professional coach",
     projectDescription:
-      "Nancy Johnson Coaching is the sitefor a professional coach focused on mentoring young female professionals. This site represents her brand and is used to gain and keep clients.",
+      "Nancy Johnson Coaching is the site for a (fictional) professional coach focused on mentoring young female professionals. This site represents her brand and is used to gain and keep clients.",
     projectShortDescription: "Professional coaching website",
-
     projectRepository: "https://github.com/petehodnefield/nancy-coaching",
     projectLive: "https://nancy-coaching.vercel.app/",
     projectTechUsed: ["React.js", "Next.js", "CSS", "MidJourney", "Chat GPT"],
