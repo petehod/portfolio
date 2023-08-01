@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { Icon } from "@iconify/react";
+import { resumeLink } from "@/utils/resumeLink";
 const Nav = () => {
   return (
     <ul className="nav">
@@ -15,11 +16,7 @@ const Nav = () => {
         </Link>
       </li>
       <li className="nav__li">
-        <Link
-          href="https://www.dropbox.com/s/7so60w7lwd9ycwn/Peter%20Hodnefield%27s%20Resume.pdf?dl=0"
-          target="__blank"
-          className="nav__a"
-        >
+        <Link href={resumeLink} target="__blank" className="nav__a">
           Resume
         </Link>
       </li>

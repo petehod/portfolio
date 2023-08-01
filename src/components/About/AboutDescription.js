@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Icon } from "@iconify/react";
 import Pete from "../../../public/assets/images/Pete.jpg";
+import { resumeLink } from "@/utils/resumeLink";
 
 const AboutDescription = () => {
   return (
@@ -70,7 +71,7 @@ const AboutDescription = () => {
         </p>
         <Link
           className="btn--large btn--link rounded"
-          href="https://www.dropbox.com/s/7so60w7lwd9ycwn/Peter%20Hodnefield%27s%20Resume.pdf?dl=0"
+          href={resumeLink}
           target="__blank"
         >
           Resume
