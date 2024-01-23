@@ -52,18 +52,14 @@ const AboutDescription = () => {
       <div className="about-text">
         <h2 className="about__header about__header--lg">About me</h2>
         <p className="about__text about__text--mgsmall">
-          I am a Fullstack Web Developer utilizing a background in Audio
-          Engineering and Psychology to build practical applications for those
-          with a growth mindset. In 2022, I earned a certificate in Full Stack
-          Web Development through the University of Minnesota coding bootcamp.
-          Strong skills in HTML, CSS, & JavaScript, as well as strong
-          fundamentals in MongoDB, REST APIs, and GraphQL.
-        </p>
-        <p className="about__text about__text--mgsmall">
-          I have a BA in Psychology through the University of Minnesota and
-          previously studied at the Berklee School of Music in Boston, MA. My
-          love for Psychology, Neuroscience, and Music have shaped most of the
-          coding projects I have built thus far.
+          Dynamic and innovative Full-Stack Developer with proficiency in
+          front-end and back-end technologies, including React, TypeScript,
+          Node, and Python. Passionate about building products that leverage
+          artificial intelligence to enhance user experiences and drive
+          innovation. Known for a growth mindset, constantly seeking new
+          challenges and opportunities to expand technical skills and knowledge.
+          Eager to contribute to a forward-thinking team where continuous
+          learning and applying cutting-edge technologies are highly valued.
         </p>
         <p className="about__text about__text--mglg">
           When I am not coding, I am usually writing guitar loops for hip hop

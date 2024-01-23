@@ -1,2 +1,2 @@
 export const resumeLink =
-  "https://www.dropbox.com/scl/fi/00ws185t7immo6857gqxj/Peter-Hodnefield-s-Resume.pdf?rlkey=iiyqf5yxhtpmb1eyv4yo233ku&dl=0";
+  "https://www.dropbox.com/scl/fi/hwsy80qs6d3cr5xmvugyi/Peter-Hodnefield.pdf?rlkey=1o56ukhks7197s60q6opld0et&dl=0";
