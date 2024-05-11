@@ -3,7 +3,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Pete from "../../../public/assets/images/Pete.jpg";
-import { projectsData } from "@/project-data/projects-data";
+import { projectsData } from "@/data/projects-data";
 import AboutProjectCard from "../ProjectCards/AboutProjectCard";
 const AboutProjects = () => {
   const featuredProjects = projectsData.slice(0, 4);

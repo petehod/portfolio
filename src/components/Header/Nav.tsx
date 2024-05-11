@@ -1,8 +1,8 @@
 import Link from "next/link";
-import React from "react";
+import React, { FC } from "react";
 import { Icon } from "@iconify/react";
-import { resumeLink } from "@/utils/resumeLink";
-const Nav = () => {
+import { RESUME_LINK } from "@/constants/resumeLink";
+export const Nav: FC = () => {
   return (
     <ul className="nav">
       <li className="nav__li">
@@ -16,7 +16,7 @@ const Nav = () => {
         </Link>
       </li>
       <li className="nav__li">
-        <Link href={resumeLink} target="__blank" className="nav__a">
+        <Link href={RESUME_LINK} target="__blank" className="nav__a">
           Resume
         </Link>
       </li>
@@ -32,5 +32,3 @@ const Nav = () => {
     </ul>
   );
 };
-
-export default Nav;

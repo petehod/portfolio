@@ -5,10 +5,9 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import meloroids from "../../../public/assets/project-images/meloroids.jpg";
 import IndividualProjectsText from "@/components/IndividualProjectsText.js/IndividualProjectsText";
 
-import { projectsData } from "@/project-data/projects-data";
+import { projectsData } from "@/data/projects-data";
 
 const IndividualProjectPage = () => {
   const router = useRouter().query;
@@ -24,7 +23,7 @@ const IndividualProjectPage = () => {
       }),
     [router]
   );
-  console.log('project', project)
+  console.log("project", project);
 
   if (!project) return <div>Loading....</div>;
   else

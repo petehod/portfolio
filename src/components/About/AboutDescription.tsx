@@ -3,8 +3,8 @@ import Link from "next/link";
 import React from "react";
 import { Icon } from "@iconify/react";
 import Pete from "../../../public/assets/images/Pete.jpg";
-import { resumeLink } from "@/utils/resumeLink";
-
+import { RESUME_LINK } from "@/constants/resumeLink";
+import { motion } from "framer-motion";
 const AboutDescription = () => {
   return (
     <div className="about-wrapper">
@@ -14,13 +14,20 @@ const AboutDescription = () => {
           target="__blank"
           href={"https://www.linkedin.com/in/petehodnefield/"}
         >
-          <div className="about-photo-wrapper">
+          <motion.div
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.5 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            className="about-photo-wrapper"
+          >
             <Image
               src={Pete}
               className="about__photo"
               alt="Full stack developer Peter Hodnefield smiling into the camera."
             />
-          </div>
+          </motion.div>
         </Link>
         <div className="about-contact-wrapper">
           <h2 className="about__header about__header--sm">Contact</h2>
@@ -67,7 +74,7 @@ const AboutDescription = () => {
         </p>
         <Link
           className="btn--large btn--link rounded"
-          href={resumeLink}
+          href={RESUME_LINK}
           target="__blank"
         >
           Resume

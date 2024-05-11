@@ -1,6 +1,6 @@
 import LargeProjectCard from "@/components/ProjectCards/LargeProjectCard";
 import React from "react";
-import { projectsData } from "@/project-data/projects-data";
+import { projectsData } from "@/data/projects-data";
 
 const projects = () => {
   return (

@@ -43,18 +43,22 @@ const IndividualProjectsText = ({ project }) => {
         ) : (
           ""
         )}
-       
       </div>
       {project.projectCredentials ? (
         <div className="iproj__credentials-wrapper">
           <h3 className="iproj__credentials-header">Test Credentials:</h3>
-            <p className="iproj__credential">Username: <span className="bold">{project.projectCredentials.username}</span></p>
-            <p className="iproj__credential">Password:<span className="bold"> {project.projectCredentials.password}</span></p>
-        </div>)
-        : 
-          (
-          ''
-          )}
+          <p className="iproj__credential">
+            Username:{" "}
+            <span className="bold">{project.projectCredentials.username}</span>
+          </p>
+          <p className="iproj__credential">
+            Password:
+            <span className="bold"> {project.projectCredentials.password}</span>
+          </p>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

@@ -356,18 +356,13 @@ header {
   height: 1.75rem;
   width: 1.75rem;
 }
-.card__link:hover {
-  opacity: 0.8;
-}
+
 .project-card-img-wrapper {
   height: 14rem;
   width: 14rem;
   margin-bottom: 1.5rem;
 }
-.project-card-img-wrapper:hover {
-  opacity: var(--opacity1);
-  transition: var(--transition1);
-}
+
 .project-card__img {
   height: 100%;
   width: 100%;

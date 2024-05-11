@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import { resumeLink } from "@/utils/resumeLink";
+import { RESUME_LINK } from "@constants/resumeLink";
 const HamburgerMenu = ({ hamOpen, setHamOpen }) => {
   return (
     <div
@@ -37,7 +37,7 @@ const HamburgerMenu = ({ hamOpen, setHamOpen }) => {
           <Link
             className="ham__link"
             onClick={() => setHamOpen(false)}
-            href={resumeLink}
+            href={RESUME_LINK}
             target="__blank"
           >
             Resume
