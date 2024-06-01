@@ -2,10 +2,10 @@
 import Link from "next/link";
 import React from "react";
 import { projectsData } from "@data/projects-data";
-import AboutProjectCard from "../ProjectCards/AboutProjectCard";
+import { ProjectCard } from "@components/ProjectCards";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "framer-motion";
-import { fadeInVariants } from "animationVariants/animationVariants";
+import { fadeInVariants } from "@constants/animation.constants";
 const AboutProjects = () => {
   const featuredProjects = projectsData.slice(0, 4);
 
@@ -24,14 +24,13 @@ const AboutProjects = () => {
       {/* Projects wrapper */}
       <div className="about-projects-wrapper">
         {featuredProjects.map((project) => (
-          <AboutProjectCard
-            key={project.projectTitle}
-            projectKey={project.projectTitle}
-            projectImage={project.projectImage}
-            projectTitle={project.projectTitle}
-            projectImageAlt={project.projectImageAlt}
-            projectRepository={project.projectRepository}
-            projectLive={project.projectLive}
+          <ProjectCard
+            key={project.title}
+            image={project.image}
+            title={project.title}
+            alt={project.alt}
+            repository={project.repository}
+            live={project.live}
           />
         ))}
       </div>

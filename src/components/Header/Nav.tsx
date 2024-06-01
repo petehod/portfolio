@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   slideInLeftVariants,
   slideInRightVariants,
-} from "animationVariants/animationVariants";
+} from "@constants/animation.constants";
 export const Nav: FC = () => {
   return (
     <motion.ul

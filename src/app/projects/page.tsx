@@ -1,7 +1,7 @@
 "use client";
-import { LargeProjectCard } from "@components/ProjectCards/LargeProjectCard";
 import React from "react";
 import { projectsData } from "@data/projects-data";
+import { ProjectCard } from "@components/ProjectCards";
 
 export default function Projects() {
   return (
@@ -9,15 +9,14 @@ export default function Projects() {
       <h2 className="projects__header">Projects</h2>
       <div className="projects-wrapper">
         {projectsData.map((project) => (
-          <LargeProjectCard
-            key={project.projectTitle}
-            projectKey={project.projectTitle}
-            projectImage={project.projectImage}
-            projectTitle={project.projectTitle}
-            projectShortDescription={project.projectShortDescription}
-            projectImageAlt={project.projectImageAlt}
-            projectRepository={project.projectRepository}
-            projectLive={project.projectLive}
+          <ProjectCard
+            key={project.title}
+            image={project.image}
+            title={project.title}
+            description={project.shortDescription}
+            alt={project.alt}
+            repository={project.repository}
+            live={project.live}
           />
         ))}
       </div>

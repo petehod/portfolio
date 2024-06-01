@@ -6,7 +6,7 @@ import Pete from "../../../public/assets/images/Pete.jpg";
 import { RESUME_LINK } from "@constants/resumeLink";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { fadeInVariants } from "animationVariants/animationVariants";
+import { fadeInVariants } from "@constants/animation.constants";
 import { ActionButton } from "@components/Buttons/ActionButton";
 const AboutDescription = () => {
   return (

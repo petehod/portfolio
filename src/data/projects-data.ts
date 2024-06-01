@@ -11,14 +11,14 @@ import unleashedImage from "../../public/assets/project-images/unleashed.jpg";
 
 export const projectsData = [
   {
-    projectTitle: "Meloroids",
-    projectLogline: "Applying Pareto’s Principle to melody creation",
-    projectDescription:
+    title: "Meloroids",
+    logline: "Applying Pareto’s Principle to melody creation",
+    description:
       "Meloroids is what I use on a daily basis to write melodies. It is a database populated with the most successful chord progressions in the genres I write in the most.",
-    projectShortDescription: "Melody creation simplified",
-    projectRepository: "https://github.com/petehodnefield/meloroids-typescript",
-    projectLive: "https://meloroids.io",
-    projectTechUsed: [
+    shortDescription: "Melody creation simplified",
+    repository: "https://github.com/petehodnefield/meloroids-typescript",
+    live: "https://meloroids.io",
+    tech: [
       "MongoDB",
       "GraphQL",
       "Apollo Client",
@@ -28,24 +28,23 @@ export const projectsData = [
       "Tailwind CSS",
       "JWT",
     ],
-    projectImage: meloroidsImage,
-    projectImageAlt:
-      "The landing page for meloroids, which makes melody writing easier.",
-    projectCredentials: {
+    image: meloroidsImage,
+    alt: "The landing page for meloroids, which makes melody writing easier.",
+    credentials: {
       username: "testuser",
       password: "Password1!",
     },
   },
 
   {
-    projectTitle: "One Percent Better",
-    projectLogline: "Practicing Growth Mindset",
-    projectDescription:
+    title: "One Percent Better",
+    logline: "Practicing Growth Mindset",
+    description:
       "One Percent Better is about getting 1% better at a chosen area every day. This is inspired from the book Atomic Habits. Users can create areas of focus and add a new improvement in each area every 24 hours. Each improvement adds a datapoint that shows the user improving by 1%.",
-    projectShortDescription: "Growth mindset",
-    projectRepository: "https://github.com/petehodnefield/one-percent-better",
-    projectLive: "https://one-percent-better.vercel.app/",
-    projectTechUsed: [
+    shortDescription: "Growth mindset",
+    repository: "https://github.com/petehodnefield/one-percent-better",
+    live: "https://one-percent-better.vercel.app/",
+    tech: [
       "MongoDB",
       "GraphQL",
       "Apollo Client",
@@ -56,54 +55,50 @@ export const projectsData = [
       "Chart.js",
       "JWT",
     ],
-    projectImage: onePercentImage,
-    projectImageAlt:
-      "The landing page for 1% Better, which focuses on practicing growth mindset",
-    projectCredentials: {
+    image: onePercentImage,
+    alt: "The landing page for 1% Better, which focuses on practicing growth mindset",
+    credentials: {
       username: "testuser",
       password: "password",
     },
   },
   {
-    projectTitle: "BeatGenius",
-    projectLogline:
-      "Custom music production from an exclusive producer collective.",
-    projectDescription:
+    title: "BeatGenius",
+    logline: "Custom music production from an exclusive producer collective.",
+    description:
       "BeatGenius is the landing pages for musical artists to purchase custom music production from a collective of producers. Clients can select 3 different packages. ",
-    projectShortDescription: "Customized music production",
+    shortDescription: "Customized music production",
 
-    projectRepository: "https://github.com/petehodnefield/beat-genius",
-    projectLive: "https://beat-genius.vercel.app/",
-    projectTechUsed: ["React.js", "Next.js", "CSS"],
-    projectImage: beatGeniusImage,
-    projectImageAlt:
-      "The landing page for BeatGenius, which provides custom music production.",
-    projectCredentials: null,
+    repository: "https://github.com/petehodnefield/beat-genius",
+    live: "https://beat-genius.vercel.app/",
+    tech: ["React.js", "Next.js", "CSS"],
+    image: beatGeniusImage,
+    alt: "The landing page for BeatGenius, which provides custom music production.",
+    credentials: null,
   },
   {
-    projectTitle: "Nancy Johnson Coaching",
-    projectLogline: "Website for a professional coach",
-    projectDescription:
+    title: "Nancy Johnson Coaching",
+    logline: "Website for a professional coach",
+    description:
       "Nancy Johnson Coaching is the site for a (fictional) professional coach focused on mentoring young female professionals. This site represents her brand and is used to gain and keep clients.",
-    projectShortDescription: "Professional coaching website",
-    projectRepository: "https://github.com/petehodnefield/nancy-coaching",
-    projectLive: "https://nancy-coaching.vercel.app/",
-    projectTechUsed: ["React.js", "Next.js", "CSS", "MidJourney", "Chat GPT"],
-    projectImage: nancyImage,
-    projectImageAlt:
-      "The landing page for Nancy Johnson Coaching, which is the site she uses to gain new clients for her coaching business.",
-    projectCredentials: null,
+    shortDescription: "Professional coaching website",
+    repository: "https://github.com/petehodnefield/nancy-coaching",
+    live: "https://nancy-coaching.vercel.app/",
+    tech: ["React.js", "Next.js", "CSS", "MidJourney", "Chat GPT"],
+    image: nancyImage,
+    alt: "The landing page for Nancy Johnson Coaching, which is the site she uses to gain new clients for her coaching business.",
+    credentials: null,
   },
 ];
 
 // {
-//   projectTitle: '',
-//   projectLogline: '',
-//   projectDescription: '',
-//   projectRepository: '',
-//   projectLive: '',
-//   projectTechUsed: [""],
-//   projectImage: '',
-//   projectImageAlt: '',
+//   title: '',
+//   logline: '',
+//   description: '',
+//   repository: '',
+//   live: '',
+//   tech: [""],
+//   image: '',
+//   alt: '',
 
 // }

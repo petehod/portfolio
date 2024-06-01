@@ -3,7 +3,7 @@ import { Nav } from "./Nav";
 import Link from "next/link";
 import Hamburger from "./Hamburger";
 import { motion } from "framer-motion";
-import { slideInLeftVariants } from "animationVariants/animationVariants";
+import { slideInLeftVariants } from "@constants/animation.constants";
 const Header = ({ hamOpen, setHamOpen }) => {
   return (
     <header>
