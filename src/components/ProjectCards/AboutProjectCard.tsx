@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
-import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Icon } from "@iconify/react/dist/iconify.js";
 const AboutProjectCard = ({
   projectImage,
   projectTitle,

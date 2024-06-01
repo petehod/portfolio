@@ -1,14 +1,25 @@
+"use client";
 import Link from "next/link";
 import React from "react";
-import { Icon } from "@iconify/react";
-import Image from "next/image";
-import Pete from "../../../public/assets/images/Pete.jpg";
-import { projectsData } from "@/data/projects-data";
+import { projectsData } from "@data/projects-data";
 import AboutProjectCard from "../ProjectCards/AboutProjectCard";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { motion } from "framer-motion";
+import { fadeInVariants } from "animationVariants/animationVariants";
 const AboutProjects = () => {
   const featuredProjects = projectsData.slice(0, 4);
+
   return (
-    <div className="about-projects">
+    <motion.div
+      variants={fadeInVariants}
+      initial="hidden"
+      animate="visible"
+      transition={{
+        delay: 2,
+        duration: 0.5,
+      }}
+      className="about-projects"
+    >
       <h2 className="about__header about__header--lg">Projects</h2>
       {/* Projects wrapper */}
       <div className="about-projects-wrapper">
@@ -31,7 +42,7 @@ const AboutProjects = () => {
         All projects
         <Icon className="btn-arrow-icon" icon="ph:arrow-bend-up-right" />
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

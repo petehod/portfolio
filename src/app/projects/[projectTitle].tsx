@@ -3,13 +3,13 @@ import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import { Icon } from "@iconify/react";
 import Image from "next/image";
-import IndividualProjectsText from "@/components/IndividualProjectsText.js/IndividualProjectsText";
+import IndividualProjectsText from "@components/IndividualProjects/IndividualProjectsText";
 
-import { projectsData } from "@/data/projects-data";
+import { projectsData } from "@data/projects-data";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
-const IndividualProjectPage = () => {
+export default function Project() {
   const router = useRouter().query;
   const chosenProject = router.projectTitle;
   const [project, setProject] = useState({ chosenProject });
@@ -21,7 +21,7 @@ const IndividualProjectPage = () => {
           setProject(project);
         }
       }),
-    [router]
+    [chosenProject, router]
   );
   console.log("project", project);
 
@@ -119,6 +119,4 @@ const IndividualProjectPage = () => {
         </div>
       </section>
     );
-};
-
-export default IndividualProjectPage;
+}

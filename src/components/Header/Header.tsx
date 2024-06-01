@@ -2,7 +2,8 @@ import React from "react";
 import { Nav } from "./Nav";
 import Link from "next/link";
 import Hamburger from "./Hamburger";
-
+import { motion } from "framer-motion";
+import { slideInLeftVariants } from "animationVariants/animationVariants";
 const Header = ({ hamOpen, setHamOpen }) => {
   return (
     <header>
@@ -11,7 +12,16 @@ const Header = ({ hamOpen, setHamOpen }) => {
         href="/"
         className="header__title"
       >
-        Peter Hodnefield
+        <motion.div
+          variants={slideInLeftVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{
+            duration: 1,
+          }}
+        >
+          Peter Hodnefield
+        </motion.div>
       </Link>
       <Nav />
       <Hamburger hamOpen={hamOpen} setHamOpen={setHamOpen} />

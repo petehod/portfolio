@@ -1,8 +1,9 @@
-import LargeProjectCard from "@/components/ProjectCards/LargeProjectCard";
+"use client";
+import { LargeProjectCard } from "@components/ProjectCards/LargeProjectCard";
 import React from "react";
-import { projectsData } from "@/data/projects-data";
+import { projectsData } from "@data/projects-data";
 
-const projects = () => {
+export default function Projects() {
   return (
     <div className="projects">
       <h2 className="projects__header">Projects</h2>
@@ -22,6 +23,4 @@ const projects = () => {
       </div>
     </div>
   );
-};
-
-export default projects;
+}

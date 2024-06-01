@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Icon } from "@iconify/react";
-const LargeProjectCard = ({
+import { Icon } from "@iconify/react/dist/iconify.js";
+export const LargeProjectCard = ({
   projectImage,
   projectImageAlt,
   projectTitle,
@@ -59,5 +59,3 @@ const LargeProjectCard = ({
     </div>
   );
 };
-
-export default LargeProjectCard;

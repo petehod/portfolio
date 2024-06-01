@@ -1,10 +1,25 @@
 import Link from "next/link";
 import React, { FC } from "react";
 import { Icon } from "@iconify/react";
-import { RESUME_LINK } from "@/constants/resumeLink";
+import { RESUME_LINK } from "@constants/resumeLink";
+import { motion } from "framer-motion";
+import {
+  slideInLeftVariants,
+  slideInRightVariants,
+} from "animationVariants/animationVariants";
 export const Nav: FC = () => {
   return (
-    <ul className="nav">
+    <motion.ul
+      variants={slideInRightVariants}
+      initial="hidden"
+      animate="visible"
+      transition={{
+        delay: 0.5,
+        duration: 0.75,
+        repeatType: "loop",
+      }}
+      className="nav"
+    >
       <li className="nav__li">
         <Link className="nav__a" href={"/"}>
           About
@@ -29,6 +44,6 @@ export const Nav: FC = () => {
           <Icon icon="material-symbols:mail-outline" />
         </Link>
       </li>
-    </ul>
+    </motion.ul>
   );
 };

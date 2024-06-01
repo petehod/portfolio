@@ -1,13 +1,25 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Icon } from "@iconify/react";
 import Pete from "../../../public/assets/images/Pete.jpg";
-import { RESUME_LINK } from "@/constants/resumeLink";
+import { RESUME_LINK } from "@constants/resumeLink";
 import { motion } from "framer-motion";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { fadeInVariants } from "animationVariants/animationVariants";
+import { ActionButton } from "@components/Buttons/ActionButton";
 const AboutDescription = () => {
   return (
-    <div className="about-wrapper">
+    <motion.div
+      variants={fadeInVariants}
+      initial="hidden"
+      animate="visible"
+      transition={{
+        delay: 1,
+        duration: 0.5,
+      }}
+      className="about-wrapper"
+    >
       {/* Photo */}
       <div className="about-photo">
         <Link
@@ -72,6 +84,7 @@ const AboutDescription = () => {
           When I am not coding, I am usually writing guitar loops for hip hop
           producers using my project Meloroids.
         </p>
+        <ActionButton buttonText="Resume" />
         <Link
           className="btn--large btn--link rounded"
           href={RESUME_LINK}
@@ -80,7 +93,7 @@ const AboutDescription = () => {
           Resume
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
