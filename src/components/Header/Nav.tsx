@@ -7,6 +7,8 @@ import {
   slideInLeftVariants,
   slideInRightVariants,
 } from "@constants/animation.constants";
+import { LinkWrapper } from "@components/Link";
+import { IconCircle } from "@components/Icons";
 export const Nav: FC = () => {
   return (
     <motion.ul
@@ -35,7 +37,15 @@ export const Nav: FC = () => {
           Resume
         </Link>
       </li>
-      <li className="nav__li nav__li--email">
+      <li className="nav__li">
+        <LinkWrapper link="mailto:pete.hod1@gmail.com">
+          <IconCircle
+            icon="material-symbols:mail-outline"
+            backgroundColor="dark"
+          />
+        </LinkWrapper>
+      </li>
+      {/* <li className="nav__li nav__li--email">
         <Link
           className="nav__a nav__a--email"
           href={"mailto:pete.hod1@gmail.com"}
@@ -43,7 +53,7 @@ export const Nav: FC = () => {
           {" "}
           <Icon icon="material-symbols:mail-outline" />
         </Link>
-      </li>
+      </li> */}
     </motion.ul>
   );
 };

@@ -42,7 +42,7 @@ const AboutDescription = () => {
           </motion.div>
         </Link>
         <div className="about-contact-wrapper">
-          <h2 className="about__header about__header--sm">Contact</h2>
+          <h2 className="text-white">Contact</h2>
           <div className="about-links-wrapper">
             <Link
               className="about__link about__link--lg"
