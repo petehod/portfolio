@@ -1,27 +1,15 @@
-import { memo } from "react";
+import { memo, ReactNode } from "react";
 import { motion } from "framer-motion";
 import { IconifyIcon } from "./IconifyIcon";
 type IconCircleProps = {
-  height?: string;
-  width?: string;
-  backgroundColor?: string;
-  icon: string;
-  iconSize?: string;
+  children: ReactNode;
 };
-export const IconCircle = memo<IconCircleProps>(
-  ({
-    height = "24",
-    width = "2",
-    backgroundColor = "dark",
-    icon,
-    iconSize,
-  }) => {
-    return (
-      <motion.div
-        className={`h-16 w-16 flex items-center justify-center bg-dark  border-2 border-solid border-dark}`}
-      >
-        <IconifyIcon icon={icon} size={iconSize} styles="h-full w-full" />
-      </motion.div>
-    );
-  }
-);
+export const IconCircle = memo<IconCircleProps>(({ children }) => {
+  return (
+    <motion.div
+      className={`h-12 w-12 flex items-center justify-center  border-1 rounded-full border-solid border-dark}`}
+    >
+      {children}
+    </motion.div>
+  );
+});

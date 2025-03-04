@@ -1,63 +1,58 @@
 import React from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-const IndividualProjectsText = ({ project }) => {
+import { Project } from "@constants/projects.constants";
+type IndividualProjectsText = {
+  project: Project;
+};
+const IndividualProjectsText = ({ project }: IndividualProjectsText) => {
+  const { description, live, logLine, testCredentials, title, repo } = project;
+
+  const projectLinks = [
+    {
+      href: repo,
+      text: "Repository",
+      icon: <Icon icon="ph:github-logo" className="iproj__icon" />,
+    },
+    {
+      href: live,
+      text: "Live",
+      icon: <Icon icon="fluent:live-20-regular" className="iproj__icon" />,
+    },
+  ];
   return (
     <div className="iproj-text-wrapper">
-      <h2 className="iproj__header">{project.projectTitle}</h2>
-      <h3 className="iproj__subheader iproj__subheader--mglg">
-        {project.projectLogline}
-      </h3>
-      <p className="iproj__text iproj__text--mglg">
-        {project.projectDescription}
-      </p>
+      <h2 className="iproj__header">{title}</h2>
+      <h3 className="iproj__subheader iproj__subheader--mglg">{logLine}</h3>
+      <p className="iproj__text iproj__text--mglg">{description}</p>
 
       {/* Links wrapper */}
       <div className="iproj-links-wrapper">
-        {project.projectRepository ? (
-          <Link
-            href={`${project.projectRepository}`}
-            target="__blank"
-            className="btn--link btn--large rounded"
-          >
-            {" "}
-            <Icon icon="ph:github-logo" className="iproj__icon" />
-            Repository
-          </Link>
-        ) : (
-          ""
-        )}
-
-        {project.projectLive ? (
-          <Link
-            href={`${project.projectLive}`}
-            target="__blank"
-            className="btn--link btn--large rounded "
-          >
-            {" "}
-            <div className="iproj__link-live">
-              <Icon icon="fluent:live-20-regular" className="iproj__icon" />
-              Live
-            </div>
-          </Link>
-        ) : (
-          ""
+        {projectLinks.map((link) =>
+          !link.href ? null : (
+            <Link
+              key={link.text}
+              href={link.href}
+              target="__blank"
+              className="btn--link btn--large rounded"
+            >
+              {link.icon}
+              {link.text}
+            </Link>
+          )
         )}
       </div>
-      {project.projectCredentials ? (
+      {testCredentials && (
         <div className="iproj__credentials-wrapper">
           <h3 className="iproj__credentials-header">Test Credentials:</h3>
           <p className="iproj__credential">
-            Username:{" "}
-            <span className="bold">{project.projectCredentials.username}</span>
+            Username: <span className="bold">{testCredentials.username}</span>
           </p>
           <p className="iproj__credential">
             Password:
-            <span className="bold"> {project.projectCredentials.password}</span>
+            <span className="bold"> {testCredentials.password}</span>
           </p>
         </div>
-      ) : (
-        ""
       )}
     </div>
   );

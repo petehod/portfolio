@@ -3,29 +3,22 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Pete from "../../../public/assets/images/Pete.jpg";
-import { RESUME_LINK } from "@constants/resumeLink";
+import { LINKS } from "@constants/link.constants";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { fadeInVariants } from "@constants/animation.constants";
-import { ActionButton } from "@components/Buttons/ActionButton";
+
+const ABOUT_LINKS = [
+  { href: LINKS.github, icon: <Icon icon="ph:github-logo" /> },
+  { href: LINKS.linkedIn, icon: <Icon icon="ph:linkedin-logo" /> },
+  { href: LINKS.email, icon: <Icon icon="material-symbols:mail-outline" /> },
+];
+
 const AboutDescription = () => {
   return (
-    <motion.div
-      variants={fadeInVariants}
-      initial="hidden"
-      animate="visible"
-      transition={{
-        delay: 1,
-        duration: 0.5,
-      }}
-      className="about-wrapper"
-    >
+    <motion.div className="about-wrapper">
       {/* Photo */}
       <div className="about-photo">
-        <Link
-          target="__blank"
-          href={"https://www.linkedin.com/in/petehodnefield/"}
-        >
+        <Link target="__blank" href={LINKS.linkedIn}>
           <motion.div
             whileHover={{
               scale: 1.05,
@@ -44,27 +37,16 @@ const AboutDescription = () => {
         <div className="about-contact-wrapper">
           <h2 className="text-white">Contact</h2>
           <div className="about-links-wrapper">
-            <Link
-              className="about__link about__link--lg"
-              href={"https://github.com/petehodnefield"}
-              target="__blank"
-            >
-              <Icon icon="ph:github-logo" />
-            </Link>
-            <Link
-              className="about__link about__link--lg"
-              href={"https://www.linkedin.com/in/petehodnefield/"}
-              target="__blank"
-            >
-              <Icon icon="ph:linkedin-logo" />
-            </Link>
-            <Link
-              className="about__link about__link--lg"
-              href={"mailto:pete.hod1@gmail.com"}
-            >
-              {" "}
-              <Icon icon="material-symbols:mail-outline" />
-            </Link>
+            {ABOUT_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                className="about__link about__link--lg"
+                href={link.href}
+                target="__blank"
+              >
+                {link.icon}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
@@ -84,10 +66,10 @@ const AboutDescription = () => {
           When I am not coding, I am usually writing guitar loops for hip hop
           producers using my project Meloroids.
         </p>
-        <ActionButton buttonText="Resume" />
+
         <Link
           className="btn--large btn--link rounded"
-          href={RESUME_LINK}
+          href={LINKS.resume}
           target="__blank"
         >
           Resume

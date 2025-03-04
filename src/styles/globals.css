@@ -509,8 +509,8 @@ header {
 }
 
 .iproj-img-wrapper {
-  width: 22rem;
-  height: 16.5rem;
+  width: 32rem;
+  height: 18rem;
 }
 
 .iproj-img-wrapper:hover {
@@ -602,7 +602,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 8rem);
   margin: 0;
-  padding: 0 0 0 1.5rem;
+
   gap: 0.25rem;
 }
 
@@ -777,10 +777,6 @@ header {
   .iproj-img-wrapper {
     width: 75vw;
     height: 25vh;
-  }
-
-  .iproj-tech-wrapper {
-    align-items: center;
   }
 }
 

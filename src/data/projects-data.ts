@@ -1,13 +1,7 @@
 import meloroidsImage from "../../public/assets/project-images/meloroids.jpg";
 import beatGeniusImage from "../../public/assets/project-images/beat-genius.jpg";
-import BWBImage from "../../public/assets/project-images/bwb.jpg";
-import akemiImage from "../../public/assets/project-images/akemi.jpg";
-import weatherDashImage from "../../public/assets/project-images/weather-dash.jpg";
-import NBASOTYImage from "../../public/assets/project-images/nba-soty.jpg";
-import mongamongaImage from "../../public/assets/project-images/mongamonga.jpg";
 import onePercentImage from "../../public/assets/project-images/one-percent-better.png";
 import nancyImage from "../../public/assets/project-images/nancy-coaching.jpg";
-import unleashedImage from "../../public/assets/project-images/unleashed.jpg";
 
 export const projectsData = [
   {
