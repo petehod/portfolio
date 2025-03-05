@@ -13,7 +13,12 @@ const Header = () => {
         <motion.div>Peter Hodnefield</motion.div>
       </Link>
       <Nav />
-      <MailIcon containerStyles="absolute right-0 lg:hidden" />
+      <MailIcon
+        containerStyles="absolute right-6 lg:hidden"
+        fontSize={18}
+        height="h-10"
+        width="w-10"
+      />
     </header>
   );
 };

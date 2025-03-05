@@ -50,7 +50,10 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     description:
       "Uses ChatGPT to generate names for your beat/melody files. It is customized to include your producer name, as well as an optional key and tempo.",
     tech: [...BASE_WEB_STACK, "ChatGPT"],
-    testCredentials: null,
+    testCredentials: {
+      username: "pete.hod1@gmail.com",
+      password: "Password1!",
+    },
   },
   {
     id: "2e140462-4f15-4017-8947-0a3d90003994",

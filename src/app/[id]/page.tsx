@@ -25,7 +25,7 @@ export default function Project() {
 
   if (!project) return null;
   return (
-    <section className="iproj  w-full">
+    <section className="flex flex-col pt-10 lg:max-w-70  w-4/5 xl:w-full ">
       {modalOpen && (
         <ImageModal
           alt={`Preview image for ${project.title}`}
@@ -33,9 +33,9 @@ export default function Project() {
           onClose={toggleModal}
         />
       )}
-      <div className="flex flex-col lg:flex-row gap-12  justify-between  w-full mb-8">
+      <div className="flex flex-col lg:flex-row gap-12  justify-between  w-full mb-4 lg:mb-0">
         <IndividualProjectsText project={project} />
-        <div className="flex-1 h-88 relative" onClick={toggleModal}>
+        <div className="w-full h-64  relative" onClick={toggleModal}>
           <Image
             className="rounded cursor-pointer"
             priority={true}
@@ -45,15 +45,6 @@ export default function Project() {
             src={project.imagePath}
           />
         </div>
-      </div>
-      <div className="flex flex-col items-center lg:items-start">
-        {/* Tech used */}
-        <h3 className="iproj__subheader iproj__subheader--mgsm">
-          Technologies used:
-        </h3>
-        <ul className="grid grid-cols-[repeat(2,8rem)] m-0 list-disc gap-1 lg:pl-4">
-          {project?.tech.map((tech) => <li key={tech}>{tech}</li>)}
-        </ul>
       </div>
 
       {/* Other projects */}

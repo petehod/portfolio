@@ -1,6 +1,6 @@
 import { memo, ReactNode } from "react";
 import { motion } from "framer-motion";
-type CircleFrameProps = {
+export type CircleFrameProps = {
   height?: string;
   width?: string;
   borderColor?: string;
@@ -18,5 +18,5 @@ export const CircleFrame = memo<CircleFrameProps>(
         {children}
       </motion.div>
     );
-  }
+  },
 );
