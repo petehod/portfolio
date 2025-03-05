@@ -1,5 +1,5 @@
 import { Url } from "next/dist/shared/lib/router/router";
-import { v4 } from "uuid";
+
 export type Project = {
   id: string;
   title: string;
@@ -22,11 +22,11 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     id: "691b41b4-d3a5-4476-b4f9-ecf7c2b1b7a9",
     title: "Link Tree Clone",
     repo: "https://github.com/petehod/link-tree-clone",
-    live: "links.yayadean.com",
+    live: "https://links.yayadean.com",
     imagePath: "/assets/project-images/links.png",
     logLine: "How I funnel my social media followers",
     description:
-      "yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya yaya ", // TODO
+      "I didn't want to pay for Link Tree premium, so I built my own. The links you see are real links I use to funnel my social media following.",
     tech: BASE_WEB_STACK,
     testCredentials: null,
   },
@@ -36,7 +36,8 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     live: "https://gunnatypebeat.com",
     imagePath: "/assets/project-images/gtb.png",
     logLine: "Making melody writing simpler",
-    description: "", // TODO
+    description:
+      "Gunna Type Beat analyzes songs and gives you the chord progression frequency for an artist. I use this when I am writing guitar melodies, and it has greatly sped up my process. Currently, there are about 15 other producers who regularly use this site.",
     tech: [...BASE_WEB_STACK, "Firebase", "Turborepo"],
     testCredentials: null,
   },
@@ -46,7 +47,8 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     live: "https://namegenerator.yayadean.com",
     imagePath: "/assets/project-images/name-generator.png",
     logLine: "Automate another step in the melody creation journey",
-    description: "", // TODO
+    description:
+      "Uses ChatGPT to generate names for your beat/melody files. It is customized to include your producer name, as well as an optional key and tempo.",
     tech: [...BASE_WEB_STACK, "ChatGPT"],
     testCredentials: null,
   },
@@ -54,10 +56,14 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     id: "2e140462-4f15-4017-8947-0a3d90003994",
     title: "Blog Yaya Dean",
     live: "https://blog.yayadean.com",
+    repo: "https://github.com/petehod/yaya-dean-blog",
     imagePath: "/assets/project-images/blog.png",
     logLine: "My blog about writing guitar Melodies",
-    description: "", // TODO
+    description:
+      "A blog where I can write about the melody creation journey, giving my audience tips to help them improve their skills.",
     tech: [...BASE_WEB_STACK, "MDX"],
     testCredentials: null,
   },
 ];
+
+export const FEATURED_PRODUCTS = PORTFOLIO_PROJECTS.slice(0, 4);

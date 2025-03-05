@@ -1,10 +1,12 @@
 import React from "react";
-import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { Project } from "@constants/projects.constants";
+
+import { Button } from "@components/Button";
 type IndividualProjectsText = {
   project: Project;
 };
+
 const IndividualProjectsText = ({ project }: IndividualProjectsText) => {
   const { description, live, logLine, testCredentials, title, repo } = project;
 
@@ -21,25 +23,28 @@ const IndividualProjectsText = ({ project }: IndividualProjectsText) => {
     },
   ];
   return (
-    <div className="iproj-text-wrapper">
+    <div className="flex flex-col items-center lg:items-start flex-1">
       <h2 className="iproj__header">{title}</h2>
       <h3 className="iproj__subheader iproj__subheader--mglg">{logLine}</h3>
       <p className="iproj__text iproj__text--mglg">{description}</p>
 
       {/* Links wrapper */}
-      <div className="iproj-links-wrapper">
+      <div className="flex w-full justify-center lg:justify-start gap-3 mb-12 lg:mb-0">
         {projectLinks.map((link) =>
           !link.href ? null : (
-            <Link
+            <Button
               key={link.text}
-              href={link.href}
+              as="a"
+              href={link.href as string}
               target="__blank"
-              className="btn--link btn--large rounded"
+              borderColor="border-dark"
+              backgroundColor="bg-transparent"
+              textColor="text-dark"
             >
               {link.icon}
               {link.text}
-            </Link>
-          )
+            </Button>
+          ),
         )}
       </div>
       {testCredentials && (

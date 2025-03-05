@@ -570,15 +570,11 @@ header {
 }
 
 .iproj-links-wrapper {
+  width: "100%";
+  background-color: "blue";
   display: flex;
-  gap: 0.75rem;
-}
-
-@media screen and (min-width: 768px) {
-  .iproj-links-wrapper {
-    display: flex;
-    gap: 1.5rem;
-  }
+  flex: 1;
+  /* gap: 0.75rem; */
 }
 
 .iproj__icon {
@@ -596,14 +592,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.iproj__ul {
-  display: grid;
-  grid-template-columns: repeat(2, 8rem);
-  margin: 0;
-
-  gap: 0.25rem;
 }
 
 .iproj__li {
